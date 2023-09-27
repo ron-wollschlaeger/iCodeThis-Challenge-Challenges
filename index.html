@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Project Template</title>
+    <title>iCodeThis Challenge: Challenges</title>
 
     <link rel="stylesheet" href="./dist/style.css">
 </head>
 
 <body
-    class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-slate-50 dark:from-slate-950 to-emerald-100 dark:to-emerald-900 text-black dark:text-white">
+    class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-gray-400 dark:from-gray-950 to-gray-200 dark:to-gray-800 text-black dark:text-white">
     <!-- Ron's basic template for iCodeThis challenges -->
     <!-- Background -->
     <div
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Credits -->
-    <div class="absolute bottom-5 right-5 scale-50 hover:scale-110 transition-all origin-bottom-right">
+    <div class="absolute bottom-5 right-5 scale-50 hover:scale-110 transition-all origin-bottom-right z-50">
         <a class="flex flex-col items-center" href="https://www.frontshape.de" target="_blank">
             <img class="block invert dark:invert-0 w-full max-w-[10rem]"
                 src="https://frontshape.de/wp-content/uploads/2023/05/H1-White.png" alt="">
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Dark mode toggle -->
-    <button class="absolute top-5 right-5 hover:animate-spin-slow">
+    <button class="absolute top-5 right-5 hover:animate-spin-slow z-50">
         <!-- Light Mode -->
         <svg xmlns="http://www.w3.org/2000/svg"
             class="sun icon icon-tabler icon-tabler-sun-filled" width="24" height="24"
@@ -84,9 +84,47 @@
     </button>
     <!-- Template END -->
 
-    <main class="bg-slate-200 dark:bg-stone-900 shadow-2xl z-10 w-60 h-60 font-bold uppercase grid place-content-center text-gray-800 dark:text-gray-200 my-40">
-        <span>Main content here</span>
-    </main>
+    <!-- Challenge BG -->
+    <div class="absolute h-[35vh] w-[50vw] left-0 bottom-[10vh] bg-gray-800/10 dark:bg-gray-600/10"></div>
+    <div class="absolute h-full w-[35vw] right-[7.5vw] bg-gray-800/10 dark:bg-gray-600/10"></div>
+
+    <div class="flex flex-col sm:flex-row gap-12 z-10 my-20 mx-4 sm:mx-0">
+        <div class="flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-800 p-8 w-full max-w-xs text-center gap-6 rounded-lg shadow-lg sm:mb-40">
+            <div class="bg-gray-500 dark:bg-white rounded-full h-12 w-12"></div>
+            <h2 class="text-2xl">Music app challenge</h2>
+            <p class="text-xs">Vote for your favorite community uploads created for our latest challenge</p>
+            <button class="bg-gradient-to-r from-indigo-600 to-purple-600 font-bold px-10 py-2 rounded-lg text-white text-sm hover:shadow-lg transition-all hover:shadow-purple-400">Vote Now!</button>
+        </div>
+
+        <div class="flex flex-col items-center bg-gray-50 dark:bg-gray-800 p-8 w-full max-w-md text-center gap-6 rounded-lg shadow-lg sm:mt-40">
+            <div class="flex flex-col justify-between w-full sm:flex-row sm:items-baseline gap-4 mb-4">
+                <h2 class="text-xl">Ongoing challenges</h2>
+                <a href="#" class="text-xs hover:underline">View all</a>
+            </div>
+
+            <div class="flex flex-col items-start w-full">
+                <h3 class="font-semibold text-xs after:content-['New'] after:ms-2 after:align-text-top after:text-xs after:bg-teal-400 after:text-black after:px-2 after:py-1 after:rounded-full">Dashboard Challenge</h3>
+                <span class="text-xs text-gray-400">36 submissions</span>
+            </div>
+
+            <div class="flex flex-col items-start w-full">
+                <h3 class="font-semibold text-xs after:content-['New'] after:ms-2 after:align-text-top after:text-xs after:bg-teal-400 after:text-black after:px-2 after:py-1 after:rounded-full">Facebook Redesign challenge</h3>
+                <span class="text-xs text-gray-400">84 submissions</span>
+            </div>
+
+            <div class="relative flex flex-col items-start w-full">
+                <h3 class="font-semibold text-xs">Dating App Challenge</h3>
+                <span class="text-xs text-gray-400">158 submissions</span>
+
+                <button class="absolute right-1 bottom-1 bg-gradient-to-r from-indigo-600 to-purple-600 font-bold px-2 py-1 rounded-lg text-white text-xs hover:shadow-lg transition-all hover:shadow-purple-400">Vote Now!</button>
+            </div>
+
+            <div class="flex flex-col items-start w-full">
+                <h3 class="font-semibold text-xs after:content-['Closed'] after:ms-2 after:align-text-top after:text-xs after:bg-orange-400 after:text-black after:px-2 after:py-1 after:rounded-full">Slack Rebranding Challenge</h3>
+                <span class="text-xs text-gray-400">247 submissions</span>
+            </div>
+        </div>
+    </div>
 
     <script src="./dist/main.js"></script>
 </body>
